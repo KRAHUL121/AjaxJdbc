@@ -40,12 +40,8 @@ public class MyServlet extends HttpServlet
           ps.setString(2, name);
           ps.setString(3, desc);
           ps.setString(4, price);
-          int i = ps.executeUpdate();
-    
-        
-            out.println("Data Sucessfully Entered");
-          
-    
+          int i = ps.executeUpdate();        
+            out.println("Data Sucessfully Entered");         
         } catch (Exception se) {
           se.printStackTrace();
         }
